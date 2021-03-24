@@ -12,3 +12,50 @@ html {
 body {
   padding: 3rem;
   box-sizing: border-box; }
+
+.footer {
+  background-color: #252525;
+  height: 90vh;
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #64dfdf; }
+  .footer__heading {
+    color: #80ffdb;
+    font-size: 4rem;
+    font-weight: 700; }
+  .footer__list {
+    list-style: none;
+    border-top: 2px solid #6930c3;
+    padding-top: 2rem;
+    width: 80%;
+    text-align: center; }
+  .footer__items {
+    display: inline-block;
+    transition: all 0.2s; }
+    .footer__items:not(:last-child) {
+      margin-right: 2rem; }
+    .footer__items:hover {
+      transform: translateY(-0.5rem); }
+    .footer__items:active {
+      transform: translateY(0); }
+  .footer__item:link, .footer__item:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #64dfdf; }
+  .footer__icons {
+    font-size: 2rem; }
+    .footer__icons--facebook, .footer__icons--twitter, .footer__icons--instagram, .footer__icons--youtube {
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+      margin-right: 1rem; }
+      .footer__icons--facebook:hover, .footer__icons--twitter:hover, .footer__icons--instagram:hover, .footer__icons--youtube:hover {
+        transform: translateY(-0.5rem); }
+      .footer__icons--facebook:active, .footer__icons--twitter:active, .footer__icons--instagram:active, .footer__icons--youtube:active {
+        transform: translateY(0); }
+  .footer__copyright {
+    font-size: 1.2rem; }
